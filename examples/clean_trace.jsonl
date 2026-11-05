@@ -1,0 +1,5 @@
+{"role": "system", "content": "You are a research assistant."}
+{"role": "user", "content": "Summarize the abstract of the linked paper."}
+{"role": "tool_call", "tool": "fetch_url", "args": {"url": "https://arxiv.org/abs/2401.00001"}}
+{"role": "tool", "tool": "fetch_url", "content": "Title: Agents Everywhere\nAbstract: We study multi-agent tool use."}
+{"role": "assistant", "content": "The paper studies multi-agent tool use."}

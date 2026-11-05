@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secrecho"
+version = "0.1.0"
+description = "Find secrets that echo from tool results into later tool args or user-facing replies"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Md Rashedul Hasan" }]
+keywords = ["agents", "security", "secrets", "llm", "audit", "cli"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Topic :: Security",
+]
+dependencies = []
+
+[project.scripts]
+secrecho = "secrecho.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["secrecho*"]
